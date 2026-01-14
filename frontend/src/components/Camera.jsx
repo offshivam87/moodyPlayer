@@ -59,7 +59,7 @@ const Camera = () => {
       const base64 = canvas.toDataURL("image/jpeg");
 
       const response = await axios.post(
-        "http://localhost:3000/songs",
+        "https://moodyplayer-ei1v.onrender.com/songs",
         { image: base64 },
         { headers: { "Content-Type": "application/json" } }
       );
@@ -76,7 +76,7 @@ const Camera = () => {
       setIsFetchingSongs(true);
 
       const songsResponse = await axios.get(
-        `http://localhost:3000/songs?mood=${detectedMood}`
+        `https://moodyplayer-ei1v.onrender.com/songs?mood=${detectedMood}`
       );
       console.log(songsResponse);
 
