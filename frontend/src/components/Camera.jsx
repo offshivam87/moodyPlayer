@@ -174,7 +174,7 @@ const Camera = () => {
                       {currentSong?.title === song.title ? <FaPause /> : <FaPlay />}
                     </span>
                   </li>
-                ))}
+                ))} 
               </ul>
             </div>
           </div>
